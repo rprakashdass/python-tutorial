@@ -1,0 +1,119 @@
+1 . Python program to do arithmetical operations
+
+n1 = int(input("enter number 1  "))
+n2 = int(input("enter number 2  "))
+sum = n1 + n2
+sub = n1 - n2
+mul = n1 * n2
+div = n1 / n2
+mod = n1 % n2
+print("Arithmetic addition is",sum)
+print("Arithmetic subtraction is",sub)
+print("Arithmetic multiplication is",mul,)
+print("Arithmetic Division is",div)
+print("Arithmetic Modulo is",mod) 
+
+2 . Python program to find the area of a triangle
+
+breath = float(input("Enter the breath of the triangle  - "))
+height = float(input("Enter the height of the triangle  - "))
+area = 0.5 * breath * height 
+print("The area of the triangle is",area)
+
+3. Python program to solve quadratic equation
+
+
+4. Python program to generate a random number
+
+import random 
+n = int(input("Enter the Range  : "))
+randomNum = random.randint(0,n)
+print("The Random number is ",randomNum)
+
+
+5. Python Program to Check if a Number is Positive, Negative or Zero
+
+number = int(input("Enter the number  : "))
+if number > 0 :
+    print("The Number is Positive")
+elif number < 0:
+    print("The Number is Negative")
+elif number == 0:
+    print("The Number is Zero")
+    
+6. # Python Program to Check if a Number is Odd or Even
+
+number = int(input("Enter number  : "))
+Even = number % 2
+if Even == 0:
+    print(number,"is Even")
+else:
+    print(number,"is Odd")
+
+7. Python Program to Check Leap Year
+
+year = int(input("Enter the Year  : "))
+
+if year % 400 == 0 or year % 100 == 0 and year % 4 != 0:
+    print(year,"is a Leap Year")
+else:
+    print(year,"is not a Leap Year")
+   
+8. Python Program to Check Prime Number
+  
+number = int(input("Enter the number  : "))
+isprime = True
+if number < 2:
+    isprime = False
+for i in range(2,int(number**0.5)+1):
+    if number % i == 0:
+        isprime = False
+        break
+        
+if isprime:
+    print(number,"is Prime number")
+else:
+    print(number,"is not a Prime number")
+
+9. Python Program to Print all Prime Numbers in an Interval
+
+a = int(input("Enter the first interval  : "))
+b = int(input("Enter the first interval  : "))
+
+print("Prime numbers between", a, "and", b, "are:")
+for i in range(a,b+1):
+    if i > 1:
+        isprime = True
+        for j in range(2,int(b**0.5)+1):
+            if i%j == 0:
+                isprime = False
+                break
+        if isprime:
+            print(i)
+	    
+10. Python Program to Display the multiplication Table
+
+num = int(input("Enter the number  : "))
+
+for i in range(1,15+1):
+    result = i*num
+    print(i ,"*",num,"=",result)
+    
+
+11. Python Program to Find the Sum of Natural Numbers
+
+num = int(input("Enter the Number: "))
+sum_of_numbers = 0
+
+for i in range(1, num + 1):
+    sum_of_numbers += i
+
+print("Sum of natural numbers from 1 to", num, "is:", sum_of_numbers)
+
+
+12....
+
+
+
+
+
