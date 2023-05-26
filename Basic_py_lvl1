@@ -111,8 +111,65 @@ for i in range(1, num + 1):
 print("Sum of natural numbers from 1 to", num, "is:", sum_of_numbers)
 
 
-12....
+12. Python program to convert kilometers to miles
 
+
+kilometer=float(input("Enter the kilometer  : "))
+meter = kilometer*1000
+print("Meter for",kilometer,"is",meter)
+
+meter=float(input("Enter the kilometer  : "))
+kilometer=meter/1000
+print("Meter for",meter,"is",kilometer)
+
+
+13. Python Program to Find the Fibanaaci of a Number
+
+num = int(input("Enter the number    : "))
+a = 0
+b = 1
+series = 1
+print(a,b)
+while series <= num:
+    series = a + b
+    a = b
+    b = series
+    if series <= num:
+        print(series,end=' ')
+
+14. Python Program to Find the Factorial of a Number
+
+num = int(input("Enter the number   : "))
+fact = 1
+i = 0
+for i in range(1,num+1):
+    fact *= i
+print("Factorial of",num,"is",fact)
+
+15. Python program to swap two variables
+
+a = int(input("Enter the first variable   : "))
+b = int(input("Enter the Second variable  : "))
+
+print("Before swaping variables a is",a,"b is",b)
+temp = a 
+a = b
+b = temp
+print("After swaping variables a is",a,"b is",b)
+
+
+16. Python program to display calendar
+
+
+import calendar
+
+year = int(input("Enter the year    "))
+month = int(input("Enter the month  "))
+
+print(calendar.month(year,month))
+
+
+17. 
 
 
 
