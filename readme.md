@@ -27,7 +27,7 @@
   <li>Python program to find the sum of natural numbers</li>
 </ul>
 
-<h2><a href = "https://github.com/prakash02100/python_problems/blob/main/Basic_py_lvl1">Basic Python Level 2</a></h2>
+<h2><a href = "https://github.com/prakash02100/python_problems/blob/main/Basic_py_lvl2">Basic Python Level 2</a></h2>
 
 <h3>Programs:</h3>
 
