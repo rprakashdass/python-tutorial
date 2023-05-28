@@ -1,0 +1,220 @@
+print("1. Print the following message: \"Hello, world!\"")
+
+
+def print_message():
+    print("Hello, world!")
+
+
+print_message()
+
+print("2. Get the user's name and print it back to them")
+
+
+def get_user_name():
+    name = input("Enter your name: ")
+    print("User name is", name)
+
+
+get_user_name()
+
+print("3. Ask the user for their age and print it back to them.")
+
+
+def get_user_age():
+    age = input("Enter your age: ")
+    print("User age is", age)
+
+
+get_user_age()
+
+print("4. Ask the user for their favorite color and print it back to them.")
+
+
+def get_favorite_color():
+    color = input("Enter your favorite color: ")
+    print("Favorite color is", color)
+
+
+get_favorite_color()
+
+print("5. Ask the user for their favorite number and print it back to them.")
+
+
+def get_favorite_number():
+    number = input("Enter your favorite number: ")
+    print("Favorite number is", number)
+
+
+get_favorite_number()
+
+print("6. Ask the user for two numbers and print the sum of the numbers back to them.")
+
+
+def print_sum():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 + num2
+    print("The sum of the numbers is", result)
+
+
+print_sum()
+
+print("7. Ask the user for two numbers and print the difference of the numbers back to them.")
+
+
+def print_difference():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 - num2
+    print("The difference of the numbers is", result)
+
+
+print_difference()
+
+print("8. Ask the user for two numbers and print the product of the numbers back to them.")
+
+
+def print_product():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 * num2
+    print("The product of the numbers is", result)
+
+
+print_product()
+
+print("9. Ask the user for two numbers and print the quotient of the numbers back to them.")
+
+
+def print_quotient():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 / num2
+    print("The quotient of the numbers is", result)
+
+
+print_quotient()
+
+print("10. Ask the user for two numbers and print the remainder of the division of the numbers back to them.")
+
+
+def print_remainder():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 % num2
+    print("The remainder of the division is", result)
+
+
+print_remainder()
+
+print("11. Ask the user for a number and print whether the number is even or odd.")
+
+
+def check_even_odd():
+    num = int(input("Enter a number: "))
+    if num % 2 == 0:
+        print(num, "is even.")
+    else:
+        print(num, "is odd.")
+
+
+check_even_odd()
+
+print("12. Ask the user for a number and print whether the number is positive or negative.")
+
+
+def check_positive_negative():
+    num = float(input("Enter a number: "))
+    if num > 0:
+        print(num, "is positive.")
+    elif num < 0:
+        print(num, "is negative.")
+    else:
+        print("The number is zero.")
+
+
+check_positive_negative()
+
+print("13. Ask the user for a number and print whether the number is prime.")
+
+
+def check_prime():
+    num = int(input("Enter a number: "))
+    if num > 1:
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                print(num, "is not a prime number.")
+                break
+        else:
+            print(num, "is a prime number.")
+    else:
+        print(num, "is not a prime number.")
+
+
+check_prime()
+
+print("14. Ask the user for a number and print whether the number is a perfect square.")
+
+
+def check_perfect_square():
+    num = int(input("Enter a number: "))
+    if num > 0:
+        if int(num ** 0.5) ** 2 == num:
+            print(num, "is a perfect square.")
+        else:
+            print(num, "is not a perfect square.")
+    elif num == 0:
+        print("0 is a perfect square.")
+    else:
+        print("Negative numbers cannot be perfect squares.")
+
+
+check_perfect_square()
+#
+print("15. Ask the user for a number and print the Fibonacci number.")
+
+
+def check_fibonacci():
+    num = int(input("Enter a number: "))
+    a, b = 0, 1
+    print(a, b, end=' ')
+    for i in range(2, num):
+        series = a + b
+        a = b
+        b = series
+        if series <= num:
+            print(series, end=' ')
+        else:
+            break
+
+
+check_fibonacci()
+
+print("16. Ask the user for a number and print whether the number is a Fibonacci number.")
+
+def check_fibonacci():
+    num = int(input("Enter a number: "))
+    a, b = 0, 1
+    print(a, b, end=' ')
+    for i in range(2, num):
+        series = a + b
+        a = b
+        b = series
+        if series <= num:
+            print(series, end=' ')
+        else:
+            break
+
+
+check_fibonacci()
+
+print("17. Ask the user for a number and print whether the number is an Armstrong Number")
+
+
+def palindrome():
+    num = str(input("Enter the number  : "))
+    if num == num[::-1]:
+        print("The number is palindrome")
+    else:
+        print("The number is not a palindrome")
+
