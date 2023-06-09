@@ -1,0 +1,57 @@
+"""
+Python Input and Output Statements
+"""
+
+'''
+Multiple Inputs in Python
+'''
+
+# This function demonstrates how to take multiple inputs in Python using the `input()` function and `split()` method.
+def multi_input():
+    a, b, c = map(int, input("Enter three space-separated values: ").split())
+    print("The values entered are:", a, b, c)
+
+
+'''
+Two Methods of Taking Inputs for Sequence Data Types like List, Set, Tuple, etc.
+'''
+
+# This function shows the first method of taking inputs for lists and sets using a loop and the `append()` or `add()` method.
+def method1_to_print_list():
+    my_list = []
+    my_set = set()
+    list_range = int(input("Enter the range of the list: "))
+    set_range = int(input("Enter the range of the set: "))
+    for i in range(list_range):
+        element = int(input("Enter the list element: "))
+        my_list.append(element)
+    for i in range(set_range):
+        element = int(input("Enter the set element: "))
+        my_set.add(element)
+    print("List:", my_list)
+    print("Set:", my_set)
+
+
+# This function shows the second method of taking inputs for lists and sets using the `map()` function and `split()` method.
+def method2_to_print_list():
+    my_list = list(map(int, input("Enter the elements of the list: ").split()))
+    my_set = set(map(int, input("Enter the elements of the set: ").split()))
+    print("List:", my_list)
+    print("Set:", my_set)
+
+
+'''
+Formatting Output
+'''
+
+# This function demonstrates how to format output using the `format()` method.
+def formatting_output():
+    name = input("Enter a name: ")
+    print("The name entered is: {}".format(name))
+
+
+def using_percent_operator():
+    # This function shows how to use the percent operator (%) for formatting output.
+    num = int(input("Enter a value: "))
+    add = num + 5
+    print("The sum is %d" % add)
