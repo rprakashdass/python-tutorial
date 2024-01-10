@@ -24,3 +24,13 @@ class addd:
 
 print(addd(a,b).res())
 ```
+# New Attribute
+```
+class addd:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+addclass = addd(5,5)
+addclass.new_attr = 89
+print(addclass.a, addclass.b + addclass.new_attr)
+```
